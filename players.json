@@ -1,3 +1,4 @@
+[
 {
   "id": 1,
   "name": "Pelé",
@@ -10,14 +11,13 @@
   "passing": 93,
   "dribbling": 96,
   "defense": 60,
-  "physical": 76,
-}
-
+  "physical": 76
+},
 {
   "id": 2,
   "name": "Maradona",
   "img": "https://futhead.cursecdn.com/static/img/20/players/icon-stories/190042.png",
-  "position": "CAM",
+  "position": "cam",
   "country": "ar",
   "rating": 97,
   "pace": 92,
@@ -25,14 +25,13 @@
   "passing": 92,
   "dribbling": 97,
   "defense": 40,
-  "physical": 76,
-}
-
+  "physical": 76
+},
 {
   "id": 3,
   "name": "Ronaldo",
   "img": "https://futhead.cursecdn.com/static/img/20/players/icon-stories/37576.png",
-  "position": "ST",
+  "position": "st",
   "country": "br",
   "rating": 96,
   "pace": 97,
@@ -40,14 +39,13 @@
   "passing": 81,
   "dribbling": 95,
   "defense": 45,
-  "physical": 76,
-}
-
+  "physical": 76
+},
 {
   "id": 4,
   "name": "Zidane",
   "img": "https://futhead.cursecdn.com/static/img/20/players/icon-stories/1397.png",
-  "position": "CAM",
+  "position": "cam",
   "country": "fr",
   "rating": 96,
   "pace": 85,
@@ -55,14 +53,13 @@
   "passing": 96,
   "dribbling": 95,
   "defense": 75,
-  "physical": 86,
-}
-
+  "physical": 86
+},
 {
   "id": 5,
   "name": "Ronaldinho",
   "img": "https://futhead.cursecdn.com/static/img/20/players/icon-stories/28130.png",
-  "position": "LW",
+  "position": "lw",
   "country": "br",
   "rating": 94,
   "pace": 92,
@@ -70,14 +67,13 @@
   "passing": 91,
   "dribbling": 95,
   "defense": 37,
-  "physical": 81,
-}
-
+  "physical": 81
+},
 {
   "id": 6,
   "name": "Cruyff",
   "img": "https://futhead.cursecdn.com/static/img/20/players/icon-stories/190045.png",
-  "position": "CF",
+  "position": "cf",
   "country": "nl",
   "rating": 94,
   "pace": 91,
@@ -85,14 +81,13 @@
   "passing": 91,
   "dribbling": 94,
   "defense": 42,
-  "physical": 73,
-}
-
+  "physical": 73
+},
 {
   "id": 7,
   "name": "Maldini",
   "img": "https://futhead.cursecdn.com/static/img/20/players/icon-stories/238439.png",
-  "position": "CB",
+  "position": "cb",
   "country": "it",
   "rating": 94,
   "pace": 86,
@@ -100,14 +95,13 @@
   "passing": 75,
   "dribbling": 69,
   "defense": 96,
-  "physical": 83,
-}
-
+  "physical": 83
+},
 {
   "id": 8,
   "name": "Garrincha",
   "img": "https://futhead.cursecdn.com/static/img/20/players/icon-stories/247553.png",
-  "position": "RW",
+  "position": "rw",
   "country": "br",
   "rating": 94,
   "pace": 90,
@@ -115,14 +109,13 @@
   "passing": 94,
   "dribbling": 96,
   "defense": 41,
-  "physical": 68,
-}
-
+  "physical": 68
+},
 {
   "id": 9,
   "name": "Alberto",
   "img": "https://futhead.cursecdn.com/static/img/20/players/icon-stories/167135.png",
-  "position": "RB",
+  "position": "rb",
   "country": "br",
   "rating": 93,
   "pace": 90,
@@ -130,14 +123,13 @@
   "passing": 81,
   "dribbling": 86,
   "defense": 90,
-  "physical": 87,
-}
-
+  "physical": 87
+},
 {
   "id": 10,
   "name": "Henry",
   "img": "https://futhead.cursecdn.com/static/img/20/players/icon-stories/1625.png",
-  "position": "ST",
+  "position": "st",
   "country": "fr",
   "rating": 93,
   "pace": 94,
@@ -145,14 +137,13 @@
   "passing": 83,
   "dribbling": 90,
   "defense": 53,
-  "physical": 80,
-}
-
+  "physical": 80
+},
 {
   "id": 11,
   "name": "Best",
   "img": "https://futhead.cursecdn.com/static/img/20/players/icon-stories/226764.png",
-  "position": "RW",
+  "position": "rw",
   "country": "en",
   "rating": 93,
   "pace": 93,
@@ -160,14 +151,13 @@
   "passing": 84,
   "dribbling": 94,
   "defense": 58,
-  "physical": 71,
-}
-
+  "physical": 71
+},
 {
   "id": 12,
   "name": "Baresi",
   "img": "https://futhead.cursecdn.com/static/img/20/players/icon-stories/166906.png",
-  "position": "CB",
+  "position": "cb",
   "country": "it",
   "rating": 93,
   "pace": 70,
@@ -175,14 +165,13 @@
   "passing": 76,
   "dribbling": 72,
   "defense": 95,
-  "physical": 82,
-}
-
+  "physical": 82
+},
 {
   "id": 13,
   "name": "Eusebio",
   "img": "https://futhead.cursecdn.com/static/img/20/players/icon-stories/242519.png",
-  "position": "CF",
+  "position": "cf",
   "country": "pt",
   "rating": 93,
   "pace": 94,
@@ -190,14 +179,13 @@
   "passing": 86,
   "dribbling": 93,
   "defense": 45,
-  "physical": 79,
-}
-
+  "physical": 79
+},
 {
   "id": 14,
   "name": "Van Basten",
   "img": "https://futhead.cursecdn.com/static/img/20/players/icon-stories/192181.png",
-  "position": "ST",
+  "position": "st",
   "country": "nl",
   "rating": 93,
   "pace": 83,
@@ -205,14 +193,13 @@
   "passing": 76,
   "dribbling": 89,
   "defense": 39,
-  "physical": 75,
-}
-
+  "physical": 75
+},
 {
   "id": 15,
   "name": "Gullit",
   "img": "https://futhead.cursecdn.com/static/img/20/players/icon-stories/214100.png",
-  "position": "CF",
+  "position": "cf",
   "country": "nl",
   "rating": 93,
   "pace": 86,
@@ -220,9 +207,8 @@
   "passing": 91,
   "dribbling": 89,
   "defense": 82,
-  "physical": 90,
-}
-
+  "physical": 90
+},
 {
   "id": ,
   "name": "",
@@ -235,5 +221,6 @@
   "passing": ,
   "dribbling": ,
   "defense": ,
-  "physical": ,
+  "physical":
 }
+]
