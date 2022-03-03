@@ -4,10 +4,24 @@ import "./App.css";
 import Card from "./components/Card";
 import { Players } from "./Players";
 
+class Button extends React.Component {
+  render() {
+    return (
+      <div>
+        <button onClick={() => this.props.onClick()}>Cambiar jugador</button>
+      </div>
+    );
+  }
+}
+
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = Players[0];
+  }
+
+  handleClick() {
+    this.setState(Players[this.state.id]);
   }
 
   render() {
@@ -15,9 +29,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Hello world!</h1>
-        <Card
-          player={this.state}
-        />
+        <Card player={this.state} />
+        <Button onClick={() => this.handleClick()} />
       </div>
     );
   }
