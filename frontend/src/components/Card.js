@@ -6,31 +6,36 @@ class Card extends React.Component {
     return (
       <div className="card-container">
         <div className="rectangle">
-        <div className="top-container">
+          <div className="top-container">
             <div className="wrap">
-          <div className="left-top">
-            <div className="rating-container">
-              <p className="rating">{this.props.player.rating}</p>
-              <p className="position">{this.props.player.position.toUpperCase()}</p>
-            </div>
-            <div className="country-container">
-              <div className="country-flag"></div>
-            </div>
-            <div className="separador1-a"></div>
-          </div>
-          <div className="stadium">
-            <div className="right-top">
-              <div className="space-top"></div>
-              <div className="player-head">
-            <div className="separador1-b"></div>
+              <div className="left-top">
+                <div className="rating-container">
+                  <p className="rating">{this.props.player.rating}</p>
+                  <p className="position">
+                    {this.props.player.position.toUpperCase()}
+                  </p>
+                </div>
+                <div className="country-container">
+                  <div className="country-flag"></div>
+                </div>
+
+                <div className="separador1-a"></div>
+              </div>
+              <div className="stadium">
+                <div className="right-top">
+                  <div className="space-top"></div>
+                  <div className="player-head">
+                    <div className="separador1-b"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          </div>
-        </div>
           <div className="names-container">
             <div className="wrap2">
-              <h3 className="player-name">{this.props.player.name.toUpperCase()}</h3>
+              <h3 className="player-name">
+                {this.props.player.name.toUpperCase()}
+              </h3>
             </div>
             <div className="separador2"></div>
           </div>
@@ -42,7 +47,8 @@ class Card extends React.Component {
                   <tbody>
                     <tr>
                       <td>
-                        {this.props.player.pace} <span className="att-stat">PAC</span>
+                        {this.props.player.pace}{" "}
+                        <span className="att-stat">PAC</span>
                       </td>
                       <td>
                         {this.props.player.dribbling}{" "}

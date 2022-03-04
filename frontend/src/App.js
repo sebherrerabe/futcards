@@ -2,7 +2,12 @@ import React from "react";
 // import logo from "./logo.svg";
 import "./App.css";
 import Card from "./components/Card";
-import { Players } from "./Players";
+import players from "./data/players.json"
+
+let Players = []
+players.forEach(player => {
+  Players.push(player)
+});
 
 class Button extends React.Component {
   render() {

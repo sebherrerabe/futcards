@@ -33,14 +33,14 @@
 .separador1-a {
   background-image: url("./assets/finaldefinales.png");
   background-size: cover;
-  height: 1px;
+  height: 0.8px;
   width: 100%;
 }
 .separador1-b {
   background-image: url("./assets/separadorfinal.png");
   background-size: cover;
   background-position: left;
-  height: 1px;
+  height: 0.8px;
   width: 100%;
 }
 .left-top {
