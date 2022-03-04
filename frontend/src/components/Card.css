@@ -6,14 +6,12 @@
   font-style: normal;
 }
 .card-container {
+  height: 600px;
+  width: 420px;
   font-family: "fifa_welcomeregular";
   margin-left: 20px;
-  height: 75vh;
-  width: 25vw;
+  background-color: #005d5c;
   border-radius: 8px;
-  background-image: url(./assets/card-container.png);
-  background-repeat: no-repeat;
-  background-size: contain;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,7 +19,6 @@
 .rectangle {
   height: 93%;
   width: 91%;
-  border: 1px solid rgb(236, 236, 236);
 }
 .top-container {
   height: 45%;
@@ -30,16 +27,25 @@
   flex-direction: column;
 }
 .wrap {
-    height: 99%;
-    display: flex;
+  height: 99%;
+  display: flex;
 }
-.separador1 {
-    background-color: #005d5c;
-    background-image: url("./assets/separador1.png");
-    background-size: cover;
-    height: 1%;
+.separador1-a {
+  background-image: url("./assets/finaldefinales.png");
+  background-size: cover;
+  height: 1px;
+  width: 100%;
+}
+.separador1-b {
+  background-image: url("./assets/separadorfinal.png");
+  background-size: cover;
+  background-position: left;
+  height: 1px;
+  width: 100%;
 }
 .left-top {
+  display: flex;
+  flex-direction: column;
   width: 27%;
   background: rgb(0, 91, 91);
   background: linear-gradient(
@@ -70,6 +76,9 @@
   width: 100%;
 }
 .player-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   height: 90%;
   width: 100%;
   background-image: url("https://futhead.cursecdn.com/static/img/20/players/icon-stories/190042.png");
@@ -86,9 +95,9 @@
   height: 10%;
 }
 .wrap2 {
-    display: flex;
-    height: 98%;
-    align-items: center;
+  display: flex;
+  height: 98%;
+  align-items: center;
 }
 .player-name {
   margin: 0;
@@ -96,17 +105,15 @@
   font-size: 2em;
 }
 .separador2 {
-    height: 1%;
-    width: 100%;
-  background-color: #005d5c;
-    background-image: url("./assets/separador.png");
-    background-size: cover;
+  height: 1px;
+  width: 100%;
+  background-image: url("./assets/separador.png");
+  background-size: cover;
 }
 .field {
-    height: 45%;
-    background-image: url("./assets/field.png");
-    background-size: contain;
-
+  height: 45%;
+  background-image: url("./assets/field.png");
+  background-size: contain;
 }
 .bottom-container {
   background: rgb(67, 158, 141);
@@ -152,27 +159,27 @@
   border-radius: 50%;
 }
 .space-top-stats {
-    height: 10%;
+  height: 10%;
 }
-.stats{
-    color: rgb(19, 19, 19);
-    height: 65%;
-    width: 70%;
-    font-size: 2em;
-    display: flex;
-    justify-content: center;
+.stats {
+  color: rgb(19, 19, 19);
+  height: 65%;
+  width: 70%;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
 }
 .logo-container {
-    height: 25%;
+  height: 25%;
 }
 .logo {
-    height: 40px;
-    width: 40px;
-    background-image: url("./assets/logo.png");
-    background-size: cover;
-
+  height: 40px;
+  width: 40px;
+  background-image: url("./assets/logo.png");
+  background-size: cover;
 }
 .att-stat {
-    color: whitesmoke;
-    font-size: 0.6em;
+  color: whitesmoke;
+  font-size: 0.6em;
 }
+
