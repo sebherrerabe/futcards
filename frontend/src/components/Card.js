@@ -1,9 +1,17 @@
 import React from "react";
 import "./Card.css";
+import styles from "./assets/countriescolours.module.css"
 
-const Card = ({ player }) => {
+
+const Card = ({ player }) => {  
+  let conClasses
+  if (player.country === "br") {
+ conClasses = `${styles.brContainer} card-container`
+  } else {
+    conClasses = "card-container"
+  }
   return (
-    <div className="card-container" key={ player.id }>
+    <div className={conClasses}  key={ player.id }>
       <div className="rectangle">
         <div className="top-container">
           <div className="wrap">
@@ -92,6 +100,7 @@ const Card = ({ player }) => {
         </div>
       </div>
     </div>
+    
   );
 };
 

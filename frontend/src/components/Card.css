@@ -1,5 +1,5 @@
 /* VARIABLES */
-:root {
+.card-container {
   /* BACKGROUND COLOURS */
   --main-color: rgb(0,91,91);
   --second-color: rgb(0, 153, 121);
@@ -20,11 +20,13 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
 .card-container {
+  margin: 10px;
   height: 600px;
   width: 420px;
   font-family: "fifa_welcomeregular";
-  margin-left: 20px;
   background: var(--second-color);
   background: linear-gradient(
     0deg,
@@ -38,6 +40,14 @@
   align-items: center;
   justify-content: center;
 }
+.brasil {
+  background: "yellow";
+background: linear-gradient(
+  0deg,
+  rgb(253, 249, 0) 0%,
+  rgb(0,92,93) 50%,
+  var(--main-color) 100%
+);}
 .rectangle {
   height: 93%;
   width: 91%;
