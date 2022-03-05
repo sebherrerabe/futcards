@@ -9,6 +9,8 @@ class Card extends React.Component {
           <div className="top-container">
             <div className="wrap">
               <div className="left-top">
+                <div className="con-1">
+                <div className="con-2">
                 <div className="rating-container">
                   <p className="rating">{this.props.player.rating}</p>
                   <p className="position">
@@ -18,7 +20,9 @@ class Card extends React.Component {
                 <div className="country-container">
                   <div className="country-flag" style={{ backgroundImage: `url("https://countryflagsapi.com/png/${this.props.player.country}")` }} ></div>
                 </div>
-
+                </div>
+                <div className="separador3"></div>
+                </div>
                 <div className="separador1-a"></div>
               </div>
               <div className="stadium">

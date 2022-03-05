@@ -1,3 +1,18 @@
+/* VARIABLES */
+:root {
+  /* BACKGROUND COLOURS */
+  --main-color: rgb(0,91,91);
+  --second-color: rgb(0, 153, 121);
+  --third-color: rgb(173, 220, 210);
+  /* TEXT COLOURS */
+  --main-text-color: rgb(247, 247, 247);
+  --second-text-color: rgb(19, 19, 19);
+  /* TRANSPARENT COLOURS */
+  --main-color-tp: rgba(0, 91, 91, 0.6);
+  --second-color-tp: rgba(173, 220, 210, 0.6);
+  --third-color-tp: rgba(82, 108, 105, 0.4);
+}
+
 @font-face {
   font-family: "fifa_welcomeregular";
   src: url("./fonts/fifawelcome1.3-webfont.woff2") format("woff2"),
@@ -10,7 +25,14 @@
   width: 420px;
   font-family: "fifa_welcomeregular";
   margin-left: 20px;
-  background-color: #005d5c;
+  background: var(--second-color);
+  background: linear-gradient(
+    0deg,
+    var(--main-color) 0%,
+    var(--third-color) 50%,
+    var(--main-color) 100%
+  );
+  border: 1px var(--second-text-color) solid;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -19,6 +41,7 @@
 .rectangle {
   height: 93%;
   width: 91%;
+  border: 1px var(--main-text-color) solid;
 }
 .top-container {
   height: 45%;
@@ -27,8 +50,25 @@
   flex-direction: column;
 }
 .wrap {
-  height: 99%;
+  height: 100%;
   display: flex;
+}
+.con-1 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.separador3 {
+  background-image: url(./assets/separador3.png);
+  background-size: cover;
+  width: 1%;
+  height: 100%;
+}
+.con-2 {
+  display: flex;
+  flex-direction: column;
+  width: 99%;
+  height: 100%;
 }
 .separador1-a {
   background-image: url("./assets/finaldefinales.png");
@@ -47,21 +87,21 @@
   display: flex;
   flex-direction: column;
   width: 27%;
-  background: rgb(0, 91, 91);
+  background: var(--main-color);
   background: linear-gradient(
     0deg,
-    rgba(0, 91, 91, 1) 0%,
-    rgba(0, 153, 121, 1) 100%
+    var(--main-color) 0%,
+    var(--second-color) 100%
   );
 }
 .right-top {
   width: 100%;
   height: 100%;
-  background: rgb(173, 220, 210);
+  background: var(--third-color);
   background: linear-gradient(
     0deg,
-    rgba(173, 220, 210, 0.6) 32%,
-    rgba(0, 169, 148, 0.6) 100%
+    var(--second-color-tp) 32%,
+    var(--main-color-tp) 100%
   );
 }
 .stadium {
@@ -91,7 +131,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #005d5c;
+  background-color: var(--main-color);
   height: 10%;
 }
 .wrap2 {
@@ -101,11 +141,11 @@
 }
 .player-name {
   margin: 0;
-  color: rgb(247, 247, 247);
+  color: var(--main-text-color);
   font-size: 2em;
 }
 .separador2 {
-  height: 1px;
+  height: 0.8px;
   width: 100%;
   background-image: url("./assets/separador.png");
   background-size: cover;
@@ -116,12 +156,12 @@
   background-size: contain;
 }
 .bottom-container {
-  background: rgb(67, 158, 141);
+  background: var(--second-color);
   background: linear-gradient(
     0deg,
-    rgba(67, 158, 141, 0.4) 0%,
-    rgba(82, 108, 105, 0.4) 50%,
-    rgba(0, 93, 92, 1) 100%
+    var(--third-color-tp) 0%,
+    var(--third-color-tp) 50%,
+    var(--main-color) 100%
   );
   height: 100%;
   display: flex;
@@ -138,7 +178,7 @@
 .rating {
   font-size: 3em;
   margin: 0;
-  color: white;
+  color: var(--main-text-color);
 }
 .position {
   margin: 0;
@@ -162,7 +202,7 @@
   height: 10%;
 }
 .stats {
-  color: rgb(19, 19, 19);
+  color: var(--second-text-color);
   height: 65%;
   width: 70%;
   font-size: 2em;
@@ -179,7 +219,7 @@
   background-size: cover;
 }
 .att-stat {
-  color: whitesmoke;
+  color: var(--main-text-color);
   font-size: 0.6em;
 }
 
