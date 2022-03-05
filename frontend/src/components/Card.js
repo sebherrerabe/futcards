@@ -2,16 +2,24 @@ import React from "react";
 import "./Card.css";
 import styles from "./assets/countriescolours.module.css"
 
+const randomNumber = () => {
+  return (
+    Math.floor(Math.random() * 250)
+  )
+}
 
 const Card = ({ player }) => {  
-  let conClasses
+  let conClasses, object
   if (player.country === "br") {
  conClasses = `${styles.brContainer} card-container`
   } else {
     conClasses = "card-container"
+    object = {
+      background: `linear-gradient(0deg, rgb(${randomNumber()},${randomNumber()},${randomNumber()}) 0%, rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()}) 50%,rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()}) 100%)`
+    }
   }
   return (
-    <div className={conClasses}  key={ player.id }>
+    <div className={conClasses}  key={ player.id } style={object}>
       <div className="rectangle">
         <div className="top-container">
           <div className="wrap">
