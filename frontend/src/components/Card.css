@@ -121,7 +121,6 @@
   justify-content: flex-end;
   height: 90%;
   width: 100%;
-  background-image: url("https://futhead.cursecdn.com/static/img/20/players/icon-stories/190042.png");
   background-position: center;
   background-size: 80%;
   background-repeat: no-repeat;
@@ -190,7 +189,6 @@
   align-items: center;
 }
 .country-flag {
-  background-image: url("https://countryflagsapi.com/png/ar");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
