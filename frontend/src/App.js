@@ -4,15 +4,11 @@ import "./App.css";
 import Card from "./components/Card";
 import Players from "./data/players.json";
 
-let players = [];
-Players.forEach((player) => {
-  players.push(player);
-});
 
 const App = () => {
   return (
     <div>
-      {players.map((player) => (
+      {Players.map((player) => (
         <Card player={player} />
       ))}
     </div>
