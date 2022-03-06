@@ -15,6 +15,14 @@ export const ar = {
   secondColorTp: "rgba(218, 218, 218, 0.4)",
   thirdColorTp: "rgba(0, 54, 155, 0.6)"
 };
+export const fr = {
+  mainColor: "rgb(22, 52, 134)",
+  secondColor: "rgb(146, 0, 0)",
+  thirdColor: "rgb(219, 219, 219)",
+  mainColorTp: "rgba(22, 52, 134, 0.6)",
+  secondColorTp: "rgba(219, 219, 219, 0.4)",
+  thirdColorTp: "rgba(146, 0, 0, 0.6)"
+};
 
 
 export const cardContainerStyle = (country) => {
@@ -44,6 +52,13 @@ export const cardContainerStyle = (country) => {
     mainColorTp = ar.mainColorTp;
     secondColorTp = ar.secondColorTp;
     thirdColorTp = ar.thirdColorTp;
+  } else if (country === "fr") {
+    mainColor = fr.mainColor;
+    secondColor = fr.secondColor;
+    thirdColor = fr.thirdColor;
+    mainColorTp = fr.mainColorTp;
+    secondColorTp = fr.secondColorTp;
+    thirdColorTp = fr.thirdColorTp;
   } else {
     mainColor = "blue";
     secondColor = "red";
