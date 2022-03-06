@@ -13,6 +13,19 @@
   --third-color-tp: rgba(82, 108, 105, 0.4);
 }
 
+.brasil {
+  --main-color: rgb(168, 165, 0);
+  --second-color: rgb(10, 119, 0);
+  --third-color: rgb(112, 252, 112);
+  /* TEXT COLOURS */
+  --main-text-color: rgb(247, 247, 247);
+  --second-text-color: rgb(19, 19, 19);
+  /* TRANSPARENT COLOURS */
+  --main-color-tp: rgba(168, 165, 0, 0.6);
+  --second-color-tp: rgba(217, 220, 173, 0.6);
+  --third-color-tp: rgba(82, 91, 108, 0.4);
+}
+
 @font-face {
   font-family: "fifa_welcomeregular";
   src: url("./fonts/fifawelcome1.3-webfont.woff2") format("woff2"),
@@ -40,14 +53,6 @@
   align-items: center;
   justify-content: center;
 }
-.brasil {
-  background: "yellow";
-background: linear-gradient(
-  0deg,
-  rgb(253, 249, 0) 0%,
-  rgb(0,92,93) 50%,
-  var(--main-color) 100%
-);}
 .rectangle {
   height: 93%;
   width: 91%;

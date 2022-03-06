@@ -1,29 +1,18 @@
 import React from "react";
+import { cardContainerStyle } from "./assets/countriesconst";
 import "./Card.css";
-import styles from "./assets/countriescolours.module.css"
 
-const randomNumber = () => {
-  return (
-    Math.floor(Math.random() * 250)
-  )
-}
 
-const Card = ({ player }) => {  
-  let conClasses, object
-  if (player.country === "br") {
- conClasses = `${styles.brContainer} card-container`
-  } else {
-    conClasses = "card-container"
-    object = {
-      background: `linear-gradient(0deg, rgb(${randomNumber()},${randomNumber()},${randomNumber()}) 0%, rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()}) 50%,rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()}) 100%)`
-    }
-  }
+
+
+const Card = ({ player }) => {
+  let styles = cardContainerStyle(player.country)
   return (
-    <div className={conClasses}  key={ player.id } style={object}>
+    <div className="card-container"  key={ player.id } style={styles.cardContainer} >
       <div className="rectangle">
         <div className="top-container">
           <div className="wrap">
-            <div className="left-top">
+            <div className="left-top" style={styles.leftTop}>
               <div className="con-1">
                 <div className="con-2">
                   <div className="rating-container">
@@ -45,7 +34,7 @@ const Card = ({ player }) => {
               <div className="separador1-a"></div>
             </div>
             <div className="stadium">
-              <div className="right-top">
+              <div className="right-top" style={styles.rightTop}>
                 <div className="space-top"></div>
                 <div
                   className="player-head"
@@ -57,14 +46,14 @@ const Card = ({ player }) => {
             </div>
           </div>
         </div>
-        <div className="names-container">
+        <div className="names-container" style={styles.namesContainer}>
           <div className="wrap2">
             <h3 className="player-name">{player.name.toUpperCase()}</h3>
           </div>
           <div className="separador2"></div>
         </div>
         <div className="field">
-          <div className="bottom-container">
+          <div className="bottom-container" style={styles.bottomContainer}>
             <div className="space-top-stats"></div>
             <div className="stats">
               <table>
