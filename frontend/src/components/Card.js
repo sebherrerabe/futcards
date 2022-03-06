@@ -7,9 +7,10 @@ import "./Card.css";
 
 const Card = ({ player }) => {
   let styles = cardContainerStyle(player.country)
+  console.log(styles.separadorNameLeft)
   return (
     <div className="card-container"  key={ player.id } style={styles.cardContainer} >
-      <div className="rectangle">
+      <div className="rectangle" style={styles.rectangle}>
         <div className="top-container">
           <div className="wrap">
             <div className="left-top" style={styles.leftTop}>
@@ -29,9 +30,9 @@ const Card = ({ player }) => {
                     </div>
                   </div>
                 </div>
-                <div className="separador3"></div>
+                <div className="separador3" style={styles.separadortop} ></div>
               </div>
-              <div className="separador1-a"></div>
+              <div className="separador1-a" style={styles.separadorNameLeft}></div>
             </div>
             <div className="stadium">
               <div className="right-top" style={styles.rightTop}>
@@ -40,7 +41,7 @@ const Card = ({ player }) => {
                   className="player-head"
                   style={{ backgroundImage: `url(${player.img})` }}
                 >
-                  <div className="separador1-b"></div>
+                  <div className="separador1-b" style={styles.separadorNameRight}></div>
                 </div>
               </div>
             </div>
@@ -50,7 +51,7 @@ const Card = ({ player }) => {
           <div className="wrap2">
             <h3 className="player-name">{player.name.toUpperCase()}</h3>
           </div>
-          <div className="separador2"></div>
+          <div className="separador2" style={styles.separadorNameBottom}></div>
         </div>
         <div className="field">
           <div className="bottom-container" style={styles.bottomContainer}>

@@ -13,17 +13,17 @@
   --third-color-tp: rgba(82, 108, 105, 0.4);
 }
 
-.brasil {
-  --main-color: rgb(168, 165, 0);
-  --second-color: rgb(10, 119, 0);
-  --third-color: rgb(112, 252, 112);
+.netherlands {
+  --main-color: rgb(240, 240, 240);
+  --second-color: rgb(31, 134, 57);
+  --third-color: rgb(29, 29, 29);
   /* TEXT COLOURS */
   --main-text-color: rgb(247, 247, 247);
-  --second-text-color: rgb(19, 19, 19);
+  --second-text-color: #131313;
   /* TRANSPARENT COLOURS */
-  --main-color-tp: rgba(168, 165, 0, 0.6);
-  --second-color-tp: rgba(217, 220, 173, 0.6);
-  --third-color-tp: rgba(82, 91, 108, 0.4);
+  --main-color-tp: rgba(146, 7, 7, 0.6);
+  --second-color-tp: rgba(233, 233, 233, 0.6);
+  --third-color-tp: rgba(0, 184, 31, 0.4);
 }
 
 @font-face {
@@ -142,6 +142,7 @@
 }
 .names-container {
   display: flex;
+  color: var(--main-text-color);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -155,7 +156,6 @@
 }
 .player-name {
   margin: 0;
-  color: var(--main-text-color);
   font-size: 2em;
 }
 .separador2 {
