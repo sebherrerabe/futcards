@@ -72,20 +72,30 @@ export const pt = {
   thirdColorTp: "rgba(0, 184, 31, 0.9)",
 };
 export const de = {
-  mainColor: "rgb(163, 44, 23)",
-  secondColor: "rgb(223, 223, 223)",
-  thirdColor: "rgb(223, 223, 223)",
-  mainColorTp: "rgba(163, 44, 2, 0.8)",
+  mainColor: "rgb(240, 240, 240)",
+  secondColor: "rgb(29, 29, 29)",
+  thirdColor: "rgb(146, 7, 7)",
+  mainColorTp: "rgba(29, 29, 29, 0.9)",
   secondColorTp: "rgba(233, 233, 233, 0.8)",
   thirdColorTp: "rgba(0, 184, 31, 0.9)",
+  mainTextColor: "rgb(19, 19, 19)",
 };
 export const bg = {
-  mainColor: "rgb(163, 44, 23)",
-  secondColor: "rgb(223, 223, 223)",
-  thirdColor: "rgb(223, 223, 223)",
-  mainColorTp: "rgba(163, 44, 2, 0.8)",
+  mainColor: "rgb(240, 240, 240)",
+  secondColor: "rgb(0, 129, 65)",
+  thirdColor: "rgb(187, 0, 0)",
+  mainColorTp: "rgba(0, 129, 65, 0.8)",
   secondColorTp: "rgba(233, 233, 233, 0.8)",
-  thirdColorTp: "rgba(0, 184, 31, 0.9)",
+  thirdColorTp: "rgba(187, 0, 0, 0.9)",
+  mainTextColor: "rgb(19, 19, 19)",
+};
+export const es = {
+  mainColor: "rgb(187, 0, 0)",
+  secondColor: "rgb(216, 212, 0)",
+  thirdColor: "rgb(216, 212, 0)",
+  mainColorTp: "rgba(216, 212, 0, 0.8)",
+  secondColorTp: "rgba(233, 233, 233, 0.8)",
+  thirdColorTp: "rgba(187, 0, 0, 0.9)",
 };
 
 export const cardContainerStyle = (country) => {
@@ -196,6 +206,7 @@ export const cardContainerStyle = (country) => {
     mainColorTp = de.mainColorTp;
     secondColorTp = de.secondColorTp;
     thirdColorTp = de.thirdColorTp;
+    mainTextColor = de.mainTextColor;
     separadorTopURL = separadorNegro.separadortop;
     separadorNameLeftURL = separadorNegro.separadorNameLeftURL;
     separadorNameRightURL = separadorNegro.separadorNameRightURL;
@@ -207,10 +218,22 @@ export const cardContainerStyle = (country) => {
     mainColorTp = bg.mainColorTp;
     secondColorTp = bg.secondColorTp;
     thirdColorTp = bg.thirdColorTp;
+    mainTextColor = bg.mainTextColor;
     separadorTopURL = separadorNegro.separadortop;
     separadorNameLeftURL = separadorNegro.separadorNameLeftURL;
     separadorNameRightURL = separadorNegro.separadorNameRightURL;
     separadorNameBottomURL = separadorNegro.separadorNameBottomURL;
+  } else if (country === "es") {
+    mainColor = es.mainColor;
+    secondColor = es.secondColor;
+    thirdColor = es.thirdColor;
+    mainColorTp = es.mainColorTp;
+    secondColorTp = es.secondColorTp;
+    thirdColorTp = es.thirdColorTp;
+    separadorTopURL = separadorBlanco.separadortop;
+    separadorNameLeftURL = separadorBlanco.separadorNameLeftURL;
+    separadorNameRightURL = separadorBlanco.separadorNameRightURL;
+    separadorNameBottomURL = separadorBlanco.separadorNameBottomURL;
   } else {
     mainColor = "blue";
     secondColor = "red";
