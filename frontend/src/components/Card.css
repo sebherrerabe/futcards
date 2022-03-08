@@ -13,18 +13,6 @@
   --third-color-tp: rgba(82, 108, 105, 0.4);
 }
 
-.netherlands {
-  --main-color: rgb(216, 212, 0);
-  --second-color: rgb(29, 29, 29);
-  --third-color: rgb(29, 29, 29);
-  /* TEXT COLOURS */
-  --main-text-color: rgb(247, 247, 247);
-  --second-text-color: #131313;
-  /* TRANSPARENT COLOURS */
-  --main-color-tp: rgb(187, 0, 0);
-  --second-color-tp: rgba(233, 233, 233, 0.6);
-  --third-color-tp: rgba(0, 184, 31, 0.4);
-}
 
 @font-face {
   font-family: "fifa_welcomeregular";
