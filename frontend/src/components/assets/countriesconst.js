@@ -74,7 +74,7 @@ export const pt = {
 export const de = {
   mainColor: "rgb(240, 240, 240)",
   secondColor: "rgb(29, 29, 29)",
-  thirdColor: "rgb(146, 7, 7)",
+  thirdColor: "rgb(230, 195, 0)",
   mainColorTp: "rgba(29, 29, 29, 0.9)",
   secondColorTp: "rgba(233, 233, 233, 0.8)",
   thirdColorTp: "rgba(0, 184, 31, 0.9)",
@@ -97,6 +97,31 @@ export const es = {
   secondColorTp: "rgba(233, 233, 233, 0.8)",
   thirdColorTp: "rgba(187, 0, 0, 0.9)",
 };
+export const cl = {
+  mainColor: "rgb(187, 0, 0)",
+  secondColor: "rgb(0, 80, 201)",
+  thirdColor: "rgb(230, 230, 230)",
+  mainColorTp: "rgba(0, 80, 201, 0.8)",
+  secondColorTp: "rgba(233, 233, 233, 0.8)",
+  thirdColorTp: "rgba(187, 0, 0, 0.9)",
+};
+export const mx = {
+  mainColor: "rgb(0, 106, 74)",
+  secondColor: "rgb(199, 0, 0)",
+  thirdColor: "rgb(230, 230, 230)",
+  mainColorTp: "rgba(199, 0, 0, 0.8)",
+  secondColorTp: "rgba(233, 233, 233, 0.8)",
+  thirdColorTp: "rgba(187, 0, 0, 0.9)",
+};
+export const gbWls = {
+  mainColor: "rgb(187, 0, 0)",
+  secondColor: "rgb(216, 212, 0)",
+  thirdColor: "rgb(0, 199, 17)",
+  mainColorTp: "rgba(0, 199, 17, 0.8)",
+  secondColorTp: "rgba(233, 233, 233, 0.8)",
+  thirdColorTp: "rgba(187, 0, 0, 0.9)",
+};
+
 
 export const cardContainerStyle = (country) => {
   let mainColor,
@@ -234,17 +259,42 @@ export const cardContainerStyle = (country) => {
     separadorNameLeftURL = separadorBlanco.separadorNameLeftURL;
     separadorNameRightURL = separadorBlanco.separadorNameRightURL;
     separadorNameBottomURL = separadorBlanco.separadorNameBottomURL;
-  } else {
-    mainColor = "blue";
-    secondColor = "red";
-    thirdColor = "pink";
-    mainColorTp = "teal";
-    secondColorTp = "white";
+  } else if (country === "cl") {
+    mainColor = cl.mainColor;
+    secondColor = cl.secondColor;
+    thirdColor = cl.thirdColor;
+    mainColorTp = cl.mainColorTp;
+    secondColorTp = cl.secondColorTp;
+    thirdColorTp = cl.thirdColorTp;
     separadorTopURL = separadorBlanco.separadortop;
-    separadorNameLeft = separadorBlanco.separadorNameLeftURL;
-    separadorNameRight = separadorBlanco.separadorNameRightURL;
+    separadorNameLeftURL = separadorBlanco.separadorNameLeftURL;
+    separadorNameRightURL = separadorBlanco.separadorNameRightURL;
     separadorNameBottomURL = separadorBlanco.separadorNameBottomURL;
-  }
+  } else if (country === "mx") {
+    mainColor = mx.mainColor;
+    secondColor = mx.secondColor;
+    thirdColor = mx.thirdColor;
+    mainColorTp = mx.mainColorTp;
+    secondColorTp = mx.secondColorTp;
+    thirdColorTp = mx.thirdColorTp;
+    separadorTopURL = separadorBlanco.separadortop;
+    separadorNameLeftURL = separadorBlanco.separadorNameLeftURL;
+    separadorNameRightURL = separadorBlanco.separadorNameRightURL;
+    separadorNameBottomURL = separadorBlanco.separadorNameBottomURL;
+  } else if (country === "gb-wls") {
+    mainColor = gbWls.mainColor;
+    secondColor = gbWls.secondColor;
+    thirdColor = gbWls.thirdColor;
+    mainColorTp = gbWls.mainColorTp;
+    secondColorTp = gbWls.secondColorTp;
+    thirdColorTp = gbWls.thirdColorTp;
+    mainTextColor = gbWls.mainTextColor;
+    separadorTopURL = separadorNegro.separadortop;
+    separadorNameLeftURL = separadorNegro.separadorNameLeftURL;
+    separadorNameRightURL = separadorNegro.separadorNameRightURL;
+    separadorNameBottomURL = separadorNegro.separadorNameBottomURL;
+  } 
+
   cardContainer = {
     background: `linear-gradient(0deg,${mainColor} 0%,${thirdColor} 50%,${mainColor} 100%)`,
   };
