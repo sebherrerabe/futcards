@@ -10,7 +10,7 @@ const App = () => {
     <div>
       <div className="main-container">
       {Players.map((player) => (
-        <Card player={player} />
+        <Card player={player} key={player.id}/>
       ))}
       </div>
     </div>

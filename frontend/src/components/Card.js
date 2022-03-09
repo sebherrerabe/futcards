@@ -9,7 +9,7 @@ const Card = ({ player }) => {
   let styles = cardContainerStyle(player.country)
   console.log(styles.separadorNameLeft)
   return (
-    <div className="card-container"  key={ player.id } style={styles.cardContainer} >
+    <div className="card-container" style={styles.cardContainer} >
       <div className="rectangle" style={styles.rectangle}>
         <div className="top-container">
           <div className="wrap">
