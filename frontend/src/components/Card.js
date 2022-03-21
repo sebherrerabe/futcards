@@ -2,9 +2,6 @@ import React from "react";
 import { cardContainerStyle } from "./assets/countriesconst";
 import "./Card.css";
 
-
-
-
 const Card = ({ player }) => {
   let styles = cardContainerStyle(player.country)
   console.log(styles.separadorNameLeft)
