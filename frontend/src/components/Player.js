@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 
-const Player = ({ deckPlayer, number }) => {
+const Player = ({ deckPlayer, number, handleClick }) => {
   return (
     <>
       <div className="player-container">
@@ -10,7 +10,7 @@ const Player = ({ deckPlayer, number }) => {
         </div>
         <div className="player-container-body">
           {deckPlayer.map((player) => (
-            <Card player={player} key={number * 100 + player.id} />
+            <Card player={player} key={number * 100 + player.id} handleClick={ handleClick } />
           ))}
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { cardContainerStyle } from "./assets/countriesconst";
 import "./Card.css";
 
-const Card = ({ player }) => {
+const Card = ({ player, handleClick }) => {
   let styles = cardContainerStyle(player.country);
   // console.log(styles.separadorNameLeft)
   return (
@@ -15,7 +15,7 @@ const Card = ({ player }) => {
                 <div className="con-1">
                   <div className="con-2">
                     <div className="rating-container">
-                      <p className="rating">{player.rating}</p>
+                      <p className="rating" onClick={() => handleClick("rating")}>{player.rating}</p>
                       <p className="position">
                         {player.position.toUpperCase()}
                       </p>
@@ -68,26 +68,26 @@ const Card = ({ player }) => {
                 <table>
                   <tbody>
                     <tr>
-                      <td>
+                      <td onClick={() => handleClick("pace")}>
                         {player.pace} <span className="att-stat">PAC</span>
                       </td>
-                      <td>
+                      <td onClick={() => handleClick("dribbling")}>
                         {player.dribbling} <span className="att-stat">DRI</span>
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                    <td onClick={() => handleClick("shooting")}>
                         {player.shooting} <span className="att-stat">SHO</span>
                       </td>
-                      <td>
+                      <td onClick={() => handleClick("defense")}>
                         {player.defense} <span className="att-stat">DEF</span>
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                    <td onClick={() => handleClick("passing")}>
                         {player.passing} <span className="att-stat">PAS</span>
                       </td>
-                      <td>
+                      <td onClick={() => handleClick("physical")}>
                         {player.physical} <span className="att-stat">PHY</span>
                       </td>
                     </tr>
