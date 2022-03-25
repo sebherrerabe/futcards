@@ -2,11 +2,11 @@ import React from "react";
 import { cardContainerStyle } from "./assets/countriesconst";
 import "./Card.css";
 
-const Card = ({ player }) => {
-  let styles = cardContainerStyle(player.country)
-  console.log(styles.separadorNameLeft)
+const Card = ({ player, cardClick }) => {
+  let styles = cardContainerStyle(player.country);
+  // console.log(styles.separadorNameLeft);
   return (
-    <div className="card-container" style={styles.cardContainer} >
+    <div className="card-container" style={styles.cardContainer}>
       <div className="rectangle" style={styles.rectangle}>
         <div className="top-container">
           <div className="wrap">
@@ -15,21 +15,23 @@ const Card = ({ player }) => {
                 <div className="con-2">
                   <div className="rating-container">
                     <p className="rating">{player.rating}</p>
-                    <p className="position">
-                      {player.position.toUpperCase()}
-                    </p>
+                    <p className="position">{player.position.toUpperCase()}</p>
                   </div>
                   <div className="country-container">
                     <div
                       className="country-flag"
-                      style={{ backgroundImage: `url("https://countryflagsapi.com/png/${player.country}")` }}
-                    >
-                    </div>
+                      style={{
+                        backgroundImage: `url("https://countryflagsapi.com/png/${player.country}")`,
+                      }}
+                    ></div>
                   </div>
                 </div>
-                <div className="separador3" style={styles.separadortop} ></div>
+                <div className="separador3" style={styles.separadortop}></div>
               </div>
-              <div className="separador1-a" style={styles.separadorNameLeft}></div>
+              <div
+                className="separador1-a"
+                style={styles.separadorNameLeft}
+              ></div>
             </div>
             <div className="stadium">
               <div className="right-top" style={styles.rightTop}>
@@ -38,7 +40,10 @@ const Card = ({ player }) => {
                   className="player-head"
                   style={{ backgroundImage: `url(${player.img})` }}
                 >
-                  <div className="separador1-b" style={styles.separadorNameRight}></div>
+                  <div
+                    className="separador1-b"
+                    style={styles.separadorNameRight}
+                  ></div>
                 </div>
               </div>
             </div>
@@ -57,32 +62,27 @@ const Card = ({ player }) => {
               <table>
                 <tbody>
                   <tr>
-                    <td>
+                    <td onClick={() => {cardClick('pace');} }>
                       {player.pace} <span className="att-stat">PAC</span>
                     </td>
                     <td>
-                      {player.dribbling}{" "}
-                      <span className="att-stat">DRI</span>
+                      {player.dribbling} <span className="att-stat">DRI</span>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      {player.shooting}{" "}
-                      <span className="att-stat">SHO</span>
+                      {player.shooting} <span className="att-stat">SHO</span>
                     </td>
                     <td>
-                      {player.defense}{" "}
-                      <span className="att-stat">DEF</span>
+                      {player.defense} <span className="att-stat">DEF</span>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      {player.passing}{" "}
-                      <span className="att-stat">PAS</span>
+                      {player.passing} <span className="att-stat">PAS</span>
                     </td>
                     <td>
-                      {player.physical}{" "}
-                      <span className="att-stat">PHY</span>
+                      {player.physical} <span className="att-stat">PHY</span>
                     </td>
                   </tr>
                 </tbody>
@@ -95,7 +95,6 @@ const Card = ({ player }) => {
         </div>
       </div>
     </div>
-    
   );
 };
 
