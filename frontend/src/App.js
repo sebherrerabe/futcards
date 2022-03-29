@@ -25,7 +25,7 @@ randomizeDecks(); // randomize the decks for the players before the app is loade
 const App = () => {
   const [deckPlayer1, setdeckPlayer1] = useState([...players1]); // we initialize the state of the deck of player 1
   const [deckPlayer2, setdeckPlayer2] = useState([...players2]); // we initialize the state of the deck of player 2
-  const [turn, setTurn] = useState(true); // we initialize the state of the turn
+  const [turn, setTurn] = useState(1); // we initialize the state of the turn to allow player 1 to play first
 
   useEffect(() => {
     // each time the state changes, we update the decks
@@ -43,10 +43,10 @@ const App = () => {
     temp2.shift(); // remove the first card of player 2
     setdeckPlayer1([...temp1]); // update the state of deck player 1
     setdeckPlayer2([...temp2]); // update the state of deck player 2
-    if (!turn) {
-      setTurn(true); // change the turn
+    if (turn === 2) {
+      setTurn(1); // change the turn
     }
-    console.log("player 1 wins");
+    console.log("Player 1 wins");
   };
 
   const player2Wins = () => {
@@ -59,10 +59,10 @@ const App = () => {
     temp2.shift(); // remove the first card of player 2
     setdeckPlayer1([...temp1]); // update the state of deck player 1
     setdeckPlayer2([...temp2]); // update the state of deck player 2
-    if (turn) {
-      setTurn(false); // change the turn
+    if (turn === 1) {
+      setTurn(2); // change the turn
     }
-    console.log("player 2 wins");
+    console.log("Player 2 wins");
   };
 
   const handleClick = (data) => {
@@ -204,20 +204,47 @@ const App = () => {
     }
   };
 
+  if (turn === 2) {
+    console.log("Player 2 plays");
+    let attrib = "";
+    switch (Math.floor(Math.random() * 6)) {
+      case 0:
+        attrib = "pace";
+        break;
+      case 1:
+        attrib = "shooting";
+        break;
+      case 2:
+        attrib = "passing";
+        break;
+      case 3:
+        attrib = "dribbling";
+        break;
+      case 4:
+        attrib = "defense";
+        break;
+      case 5:
+        attrib = "physical";
+    }
+    handleClick(attrib);
+  } else {
+    console.log("Player 1 plays");
+  }
+
   return (
     <>
       <div className="main-container">
         <Player
-          deckPlayer={deckPlayer1}
-          number={1}
           key={1}
+          number={1}
+          deckPlayer={deckPlayer1}
           handleClick={handleClick}
           turn={turn}
         />
         <Player
-          deckPlayer={deckPlayer2}
-          number={2}
           key={2}
+          number={2}
+          deckPlayer={deckPlayer2}
           handleClick={handleClick}
           turn={turn}
         />

@@ -2,7 +2,7 @@ import React from "react";
 import { cardContainerStyle } from "./assets/countriesconst";
 import "./Card.css";
 
-const Card = ({ player, handleClick, number, turn }) => {
+const Card = ({ number, turn, player, handleClick }) => {
   let styles = cardContainerStyle(player.country);
   // console.log(styles.separadorNameLeft)
   return (
@@ -15,7 +15,7 @@ const Card = ({ player, handleClick, number, turn }) => {
                 <div className="con-1">
                   <div className="con-2">
                     <div className="rating-container">
-                      { (turn && number === 1) || (!turn && number === 2) 
+                      { (turn ===1 && number === 1) || (turn === 2 && number === 2) 
                         ? <p className="rating" onClick={() => handleClick("rating")}>{player.rating}</p>
                         : <p className="rating">{player.rating}</p>
                       }
@@ -71,31 +71,31 @@ const Card = ({ player, handleClick, number, turn }) => {
                 <table>
                   <tbody>
                     <tr>
-                      { (turn && number === 1) || (!turn && number === 2) 
+                      { (turn === 1 && number === 1) || (turn === 2 && number === 2) 
                         ? <td onClick={() => handleClick("pace")}>{player.pace} <span className="att-stat">PAC</span></td>
                         : <td>{player.pace} <span className="att-stat">PAC</span></td>
                       }
-                      { (turn && number === 1) || (!turn && number === 2) 
+                      { (turn === 1 && number === 1) || (turn === 2 && number === 2) 
                         ? <td onClick={() => handleClick("dribbling")}>{player.dribbling} <span className="att-stat">DRI</span></td>
                         : <td>{player.dribbling} <span className="att-stat">DRI</span></td>
                       }
                     </tr>
                     <tr>
-                      { (turn && number === 1) || (!turn && number === 2) 
+                      { (turn === 1 && number === 1) || (turn === 2 && number === 2) 
                         ? <td onClick={() => handleClick("shooting")}>{player.shooting} <span className="att-stat">SHO</span></td>
                         : <td>{player.shooting} <span className="att-stat">SHO</span></td>
                       }
-                      { (turn && number === 1) || (!turn && number === 2) 
+                      { (turn === 1 && number === 1) || (turn === 2 && number === 2) 
                         ? <td onClick={() => handleClick("defense")}>{player.defense} <span className="att-stat">DEF</span></td>
                         : <td>{player.defense} <span className="att-stat">DEF</span></td>
                       }
                     </tr>
                     <tr>
-                      { (turn && number === 1) || (!turn && number === 2) 
+                      { (turn === 1 && number === 1) || (turn === 2 && number === 2) 
                         ? <td onClick={() => handleClick("passing")}>{player.passing} <span className="att-stat">PAS</span></td>
                         : <td>{player.passing} <span className="att-stat">PAS</span></td>
                       }
-                      { (turn && number === 1) || (!turn && number === 2) 
+                      { (turn === 1 && number === 1) || (turn === 2 && number === 2) 
                         ? <td onClick={() => handleClick("physical")}>{player.physical} <span className="att-stat">PHY</span></td>
                         : <td>{player.physical} <span className="att-stat">PHY</span></td>
                       }

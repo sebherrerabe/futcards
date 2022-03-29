@@ -1,12 +1,12 @@
 import React from "react";
 import Card from "./Card";
 
-const Player = ({ deckPlayer, number, handleClick, turn }) => {
+const Player = ({ number, turn, deckPlayer, handleClick }) => {
   let turnDisplay = <p>Opponent's turn</p>
-  if (turn && number === 1) {
+  if (turn === 1 && number === 1) {
     turnDisplay = <p>Player's turn</p>
   }
-  else if (!turn && number === 2) {
+  else if (turn === 2 && number === 2) {
     turnDisplay = <p>AI turn</p>
   }
 
