@@ -40,6 +40,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  grid-column: 1;
+  grid-row: 1;
+  /* visibility: hidden; */
+  transition: all 0.5s ease-in-out;
 }
 .rectangle {
   height: 93%;

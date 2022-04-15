@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import "./Player.css";
 
 const Player = ({ number, turn, deckPlayer, handleClick }) => {
   let turnDisplay = <p>Opponent's turn</p>
@@ -19,9 +20,10 @@ const Player = ({ number, turn, deckPlayer, handleClick }) => {
           {turnDisplay}
         </div>
         <div className="player-container-body">
-          {deckPlayer.map((player) => (
-            <Card player={player} key={number * 100 + player.id} handleClick={ handleClick } number={number} turn={turn}/>
+          {deckPlayer.reverse().map((player) => (
+            <Card player={player} key={number * 100 + player.id} handleClick={ handleClick } number={number} turn={turn} />
           ))}
+          {console.log(deckPlayer[0])}
         </div>
       </div>
     </>
